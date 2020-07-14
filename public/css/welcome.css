@@ -175,7 +175,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 760px) {
+@media (min-width: 1200px) {
   .card-wrapper {
       width: 360px;
   }
