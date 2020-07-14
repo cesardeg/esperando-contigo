@@ -1958,6 +1958,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1970,6 +1973,24 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.initTimer();
+  },
+  computed: {
+    formatDate: function formatDate() {
+      var dateOptions = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        timeZone: 'America/Mexico_City'
+      };
+      var timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'America/Mexico_City'
+      };
+      return "".concat(this.reference.toLocaleDateString('es', dateOptions), " ").concat(this.reference.toLocaleTimeString('es', timeOptions), " CDMX.");
+    }
   },
   methods: {
     formatNumber: function formatNumber(n) {
@@ -37663,6 +37684,10 @@ var render = function() {
     _c("div", { staticClass: "segment" }, [
       _vm._v("\n        " + _vm._s(_vm.formatNumber(_vm.seconds)) + " "),
       _c("span", { staticClass: "unit" }, [_vm._v("Segundos")])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "date" }, [
+      _vm._v("\n        " + _vm._s(_vm.formatDate) + "\n    ")
     ])
   ])
 }

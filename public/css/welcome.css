@@ -275,12 +275,14 @@ html, body {
   margin-right: auto;
   margin-top: 48px;
   display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 760px) {
   .timer {
-      align-items: center;
-      width: auto;
-      align-self: flex-start;
+    width: auto;
+    align-items: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
   }
 }
 .timer .segment {
@@ -357,4 +359,13 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   line-height: 1rem;
+}
+
+.timer .date {
+  width: 100%;
+  margin-top: 40px;
+  color: #b3b3b3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
