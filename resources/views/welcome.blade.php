@@ -65,6 +65,9 @@
                 <timer-component></timer-component>
             </div>
         </main>
+        @php
+        phpinfo()
+        @endphp
     </body>
     <script>
         var reference = new Date('2020-08-31T05:00:00');
