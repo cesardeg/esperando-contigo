@@ -17,7 +17,7 @@
             <div class="container">
                 <img src="{{ asset('img/logo.svg') }}" alt="Esperando contigo" class="logo">
                 <span class="spacer"></span>
-                @auth()
+                @guest()
                 <a href="{{ route('login') }}" class="link">
                     Login
                 </a>
