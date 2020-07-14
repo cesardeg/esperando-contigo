@@ -17,9 +17,11 @@
             <div class="container">
                 <img src="{{ asset('img/logo.svg') }}" alt="Esperando contigo" class="logo">
                 <span class="spacer"></span>
+                @auth()
                 <a href="{{ route('login') }}" class="link">
                     Login
                 </a>
+                @endauth
                 <a href="https://www.instagram.com/esperandocontigo/" target="_blank" class="link">
                     <img src="{{ asset('img/instagram.svg') }}" alt="Esperando contigo" class="icon">
                 </a>
@@ -65,9 +67,6 @@
                 <timer-component></timer-component>
             </div>
         </main>
-        @php
-        phpinfo()
-        @endphp
     </body>
     <script>
         var reference = new Date('2020-08-31T05:00:00');
