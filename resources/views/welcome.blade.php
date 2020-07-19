@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Muli:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/welcome.css?v=1') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css?v=1.1') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css?v=1.1') }}" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
@@ -162,7 +162,7 @@
     <script>
         window.eventDate = new Date('2020-08-31T05:00:00Z');
     </script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js?v=1.1') }}"></script>
     <script>
         @if(session('payment'))
             $('#modal-payment').modal('show');
