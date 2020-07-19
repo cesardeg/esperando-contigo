@@ -1977,9 +1977,9 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     formatDate: function formatDate() {
       var dateOptions = {
-        weekday: 'short',
+        weekday: 'long',
         year: 'numeric',
-        month: 'short',
+        month: 'long',
         day: 'numeric',
         timeZone: 'America/Mexico_City'
       };

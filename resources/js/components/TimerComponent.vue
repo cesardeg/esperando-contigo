@@ -32,7 +32,7 @@
         },
         computed: {
             formatDate() {
-                const dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timeZone: 'America/Mexico_City' };
+                const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Mexico_City' };
                 const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/Mexico_City' };
                 return `${this.reference.toLocaleDateString('es', dateOptions)} ${this.reference.toLocaleTimeString('es', timeOptions)} CDMX.`;
             },

@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-secondary">Siguiente</button>
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -160,7 +160,7 @@
         </div>
     </body>
     <script>
-        window.eventDate = new Date('2020-08-31T05:00:00Z');
+        window.eventDate = new Date('2020-08-23T16:00:00Z');
     </script>
     <script src="{{ asset('js/app.js?v=1.1') }}"></script>
     <script>
