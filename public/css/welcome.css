@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('../fonts/century-gothic/index.css');
 
 html, body {
   margin: 0;
   background-color: #fff;
-  font-family: 'Century Gothic', sans-serif;
   color: #333;
   font-weight: 400;
   font-size: 16px;
@@ -85,7 +83,7 @@ html, body {
   text-decoration: none;
 }
 .navbar .link + .link {
-  margin-left: 8px;
+  margin-left: 24px;
 }
 .navbar .spacer {
   flex-grow: 1;
@@ -242,28 +240,13 @@ html, body {
   border-radius: 16px;
   background-color: rgba(176,149,220,0.75);
 }
-.btn {
-  display: block;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 .panel-card .btn + .btn {
   margin-top: 1em;
 }
 .btn.btn-outline {
   border: 1.5px solid #ffffff;
   color: #ffffff;
-}
-.btn.btn-secondary {
-  background-color: rgb(253,156,173);
-  color: #ffffff;
-  border: 1px solid rgb(253,156,173);
 }
 .timer-wrapper {
   box-sizing: border-box;
@@ -368,62 +351,4 @@ html, body {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.9em;
-}
-
-.modal-content {
-  border-radius: 1rem;
-}
-.modal-header {
-  padding: 2rem 1rem 0;
-  border-bottom: 0;
-}
-@media screen and (min-width: 760px) {
-  .modal-header {
-    padding: 2rem 2rem 0;
-  }
-}
-.nav.nav-tabs {
-  width: 100%;
-  border-color: #b095dc;
-  color: #b095dc;
-}
-.modal-header .close {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-}
-.nav-tabs .nav-link {
-  color: inherit;
-  text-transform: uppercase;
-}
-.nav-tabs .nav-link.active {
-  background-color: #b095dc;
-  color: #fff;
-  border-radius: 12px 12px 0 0;
-  border-color: #b095dc;
-}
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border: 1px solid rgba(176,149,220,0.25);
-  border-radius: 12px 12px 0 0;
-}
-.modal-body {
-  padding: 1rem 2rem;
-}
-.form-control {
-  border: 1px solid #b095dc;
-}
-.form-control:focus {
-  border-color: #b095dc;
-  box-shadow: 0 0 0 0.2rem rgba(176,149,220,0.25);
-}
-.custom-control-input:checked ~ .custom-control-label::before {
-  border-color: rgb(253,156,173);
-  background-color: rgb(253,156,173);
-}
-.modal-footer {
-  border-top: 0;
-  padding: 0 2rem 2rem;
-}
-.modal-footer > * {
-  margin: 0;
 }

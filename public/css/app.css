@@ -1,4 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@font-face {
+  font-family: 'Century Gothic';
+  src: url(/fonts/regular.ttf?09f6b2ba02572f19a7d7dd2b5f6494ad);
+  font-weight: 400
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url(/fonts/bold.ttf?ae704b1128b630b4b838a9c85a53e653);
+  font-weight: 700
+}
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -10928,6 +10939,11 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-family: "Century Gothic", sans-serif;
+  background-color: #ffffff;
+}
+
 .modal-content {
   border-radius: 1rem;
 }
@@ -10973,6 +10989,21 @@ a.text-dark:focus {
   border-radius: 12px 12px 0 0;
 }
 
+.nav-tabs.secondary {
+  border-color: #fd9cad;
+  color: #fd9cad;
+}
+
+.nav-tabs.secondary .nav-link.active {
+  background-color: #fd9cad;
+  border-color: #fd9cad;
+}
+
+.nav-tabs.secondary .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: rgba(253, 156, 173, 0.25);
+}
+
 .modal-body {
   padding: 1rem 2rem;
 }
@@ -11001,21 +11032,14 @@ a.text-dark:focus {
 }
 
 .btn {
-  display: block;
   padding: 8px 16px;
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.btn.btn-outline {
-  border: 1.5px solid #ffffff;
-  color: #ffffff;
 }
 
 .btn.btn-primary {
@@ -11030,6 +11054,19 @@ a.text-dark:focus {
   border: 1px solid #fd9cad;
 }
 
+.alert.alert-secondary-outline {
+  border-color: #fd9cad;
+  color: #fd9cad;
+}
+
+.border-secondary {
+  border-color: #fd9cad !important;
+}
+
+.text-secondary {
+  color: #fd9cad !important;
+}
+
 .bg-gradient {
   background: linear-gradient(90deg, #b095dc 0%, #fd9cad 100%);
 }
@@ -11041,5 +11078,6 @@ a.text-dark:focus {
 .card,
 .card-header {
   border-color: #b095dc;
+  background-color: #ffffff;
 }
 
