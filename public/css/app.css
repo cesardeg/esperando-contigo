@@ -10928,3 +10928,118 @@ a.text-dark:focus {
   }
 }
 
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-header {
+  padding: 2rem 1rem 0;
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 760px) {
+  .modal-header {
+    padding: 2rem 2rem 0;
+  }
+}
+
+.nav.nav-tabs {
+  width: 100%;
+  border-color: #b095dc;
+  color: #b095dc;
+}
+
+.modal-header .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.nav-tabs .nav-link {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #b095dc;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  border-color: #b095dc;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border: 1px solid rgba(176, 149, 220, 0.25);
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-body {
+  padding: 1rem 2rem;
+}
+
+.form-control {
+  border: 1px solid #b095dc;
+}
+
+.form-control:focus {
+  border-color: #b095dc;
+  box-shadow: 0 0 0 0.2rem rgba(176, 149, 220, 0.25);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #fd9cad;
+  background-color: #fd9cad;
+}
+
+.modal-footer {
+  border-top: 0;
+  padding: 0 2rem 2rem;
+}
+
+.modal-footer > * {
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn.btn-outline {
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn.btn-primary {
+  background-color: #b095dc;
+  color: #ffffff;
+  border: 1px solid #b095dc;
+}
+
+.btn.btn-secondary {
+  background-color: #fd9cad;
+  color: #ffffff;
+  border: 1px solid #fd9cad;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #b095dc 0%, #fd9cad 100%);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.card,
+.card-header {
+  border-color: #b095dc;
+}
+

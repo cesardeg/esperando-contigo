@@ -21,7 +21,7 @@
 <script>
     export default {
         data: () => ({
-            reference: window.reference || new Date(),
+            reference: window.eventDate || new Date(),
             days: null,
             hours: null,
             minutes: null,
@@ -33,7 +33,7 @@
         computed: {
             formatDate() {
                 const dateOptions = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timeZone: 'America/Mexico_City' };
-                const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'America/Mexico_City' };
+                const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/Mexico_City' };
                 return `${this.reference.toLocaleDateString('es', dateOptions)} ${this.reference.toLocaleTimeString('es', timeOptions)} CDMX.`;
             },
         },

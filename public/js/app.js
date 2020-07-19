@@ -1964,7 +1964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      reference: window.reference || new Date(),
+      reference: window.eventDate || new Date(),
       days: null,
       hours: null,
       minutes: null,
@@ -1986,7 +1986,7 @@ __webpack_require__.r(__webpack_exports__);
       var timeOptions = {
         hour: '2-digit',
         minute: '2-digit',
-        hour12: true,
+        hour12: false,
         timeZone: 'America/Mexico_City'
       };
       return "".concat(this.reference.toLocaleDateString('es', dateOptions), " ").concat(this.reference.toLocaleTimeString('es', timeOptions), " CDMX.");
