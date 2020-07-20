@@ -6,6 +6,9 @@
 
         <title>{{ config('app.name') }}</title>
 
+        <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" sizes="any">
+        <link rel="mask-icon" href="{{ asset('favicon-dark.svg') }}" color="#ffffff" >
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Muli:wght@400;700&display=swap" rel="stylesheet">
 

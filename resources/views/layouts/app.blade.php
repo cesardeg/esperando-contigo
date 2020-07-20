@@ -9,6 +9,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" sizes="any">
+    <link rel="mask-icon" href="{{ asset('favicon-dark.svg') }}" color="#ffffff" >
+
     <!-- Scripts -->
     <script src="{{ asset(mix('js/app.js')) }}" defer></script>
 
