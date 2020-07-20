@@ -11,14 +11,14 @@
 
         <!-- Styles -->
         <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-        <link href="{{ asset('css/welcome.css?v=1.0') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css?v=1.0.0') }}" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
             <div class="container">
                 <img src="{{ asset('img/logo.svg') }}" alt="Esperando contigo" class="logo">
                 <span class="spacer"></span>
-                <a href="#!" class="link">
+                <a href="{{ asset('/programa/equipo.pdf') }}" class="link" target="_blank">
                     Equipo
                 </a>
                 @guest()

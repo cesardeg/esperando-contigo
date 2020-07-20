@@ -17,6 +17,8 @@ html, body {
   top: 0;
   width: 100%;
   background: rgb(176,149,220);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(176,149,220,1)), to(rgba(253,156,173,1)));
+  background: -o-linear-gradient(left, rgba(176,149,220,1) 0%, rgba(253,156,173,1) 100%);
   background: linear-gradient(90deg, rgba(176,149,220,1) 0%, rgba(253,156,173,1) 100%);
   color: #ffffff;
   z-index: 1;
@@ -43,8 +45,12 @@ html, body {
   }
 }
 .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 64px;
 }
 @media screen and (min-width: 1600px) {
@@ -56,8 +62,10 @@ html, body {
   display: block;
   height: 44px;
   width: 43px;
-  object-fit: cover;
-  object-position: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 @media screen and (min-width: 760px) {
   .navbar .logo {
@@ -86,15 +94,26 @@ html, body {
   margin-left: 24px;
 }
 .navbar .spacer {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .main {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 64px;
   padding-top: 64px;
   padding-bottom: 64px;
   min-height: calc(100vh - 64px);
   background: url('../img/campaign-2020/bg.jpg');
+  background:
+    -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(15%, rgba(255,255,255,0.5)), color-stop(50%, rgba(255,255,255,0)), color-stop(85%, rgba(255,255,255,0.5)), to(rgba(255,255,255,1))),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), color-stop(60%, rgba(255,255,255,0.9)), color-stop(75%, rgba(255,255,255,0)), to(rgba(255,255,255,1))),
+    url('../img/campaign-2020/bg.jpg');
+  background:
+    -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 15%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 85%, rgba(255,255,255,1) 100%),
+    -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%),
+    url('../img/campaign-2020/bg.jpg');
   background:
     linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 15%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 85%, rgba(255,255,255,1) 100%),
     linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 60%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%),
@@ -105,8 +124,22 @@ html, body {
 }
 @media screen and (min-width: 760px) {
   .main {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      background:
+        -o-linear-gradient(left, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) calc(50% + 120px), rgba(255,255,255,0) 100%),
+        -o-radial-gradient(circle, rgba(176,149,172,1) 0%, rgba(176,149,172,1) 10%, rgba(253,156,173,0) 50%),
+        url('../img/campaign-2020/bg.jpg');
       background:
         linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) calc(50% + 120px), rgba(255,255,255,0) 100%),
         radial-gradient(circle, rgba(176,149,172,1) 0%, rgba(176,149,172,1) 10%, rgba(253,156,173,0) 50%),
@@ -122,12 +155,17 @@ html, body {
       background-repeat: no-repeat;
   }
   .main .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
   }
   .main .container .campaign-col,
   .main .container .offers-col {
-      flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
       width: 0;
   }
 }
@@ -189,13 +227,15 @@ html, body {
   }
 }
 .offers-card {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   width: 100%;
   background-color: #ffffff;
   padding: 0.5em;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .offers-card .offer {
   border: 1px solid rgb(176,149,220);
@@ -232,7 +272,8 @@ html, body {
   border-top-color: rgb(253,156,173);
 }
 .panel-card {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 240px;
   width: 100%;
   margin-top: 2em;
@@ -249,7 +290,8 @@ html, body {
   color: #ffffff;
 }
 .timer-wrapper {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
 }
 .timer {
@@ -257,19 +299,28 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 760px) {
   .timer {
     width: auto;
-    align-items: center;
-    align-self: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 .timer .segment {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   width: 54px;
   height: 54px;
