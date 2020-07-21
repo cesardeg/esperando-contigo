@@ -62,18 +62,18 @@
                                 <div class="offers-card">
                                     <div class="offer">
                                         <div class="price">
-                                            $1,000.00 <span class="currency">MXN</span>
-                                        </div>
-                                        <div class="date">
-                                            A partir del <b> 11 de Agosto</b>
-                                        </div>
-                                    </div>
-                                    <div class="offer">
-                                        <div class="price">
                                             $800.00 <span class="currency">MXN</span>
                                         </div>
                                         <div class="date">
                                             Antes del <b> 10 de Agosto</b>
+                                        </div>
+                                    </div>
+                                    <div class="offer">
+                                        <div class="price">
+                                            $1,000.00 <span class="currency">MXN</span>
+                                        </div>
+                                        <div class="date">
+                                            A partir del <b> 11 de Agosto</b>
                                         </div>
                                     </div>
                                 </div>
@@ -82,18 +82,18 @@
                                 <div class="offers-card">
                                     <div class="offer">
                                         <div class="price">
-                                            $50.00 <span class="currency">USD</span>
-                                        </div>
-                                        <div class="date">
-                                            A partir del <b> 11 de Agosto</b>
-                                        </div>
-                                    </div>
-                                    <div class="offer">
-                                        <div class="price">
                                             $45.00 <span class="currency">USD</span>
                                         </div>
                                         <div class="date">
                                             Antes del <b> 10 de Agosto</b>
+                                        </div>
+                                    </div>
+                                    <div class="offer">
+                                        <div class="price">
+                                            $50.00 <span class="currency">USD</span>
+                                        </div>
+                                        <div class="date">
+                                            A partir del <b> 11 de Agosto</b>
                                         </div>
                                     </div>
                                 </div>
