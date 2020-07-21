@@ -226,6 +226,19 @@ html, body {
       margin-right: 0;
   }
 }
+.nav.nav-tabs.offers-tabs {
+  font-size: 0.9rem;
+  border-bottom: 0;
+}
+.nav.nav-tabs.offers-tabs .nav-link {
+  background-color: rgba(179,179,179,0.5);
+  color: #ffffff;
+  border-radius: 0;
+}
+.nav.nav-tabs.offers-tabs .nav-link.active {
+  background-color: #ffffff;
+  color: #b095dc;
+}
 .offers-card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
