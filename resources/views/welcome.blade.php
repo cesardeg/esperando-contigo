@@ -65,7 +65,7 @@
                         </div>
                         <div class="panel-card">
                             <a href="{{ url('/programa/informes.pdf') }}" class="btn btn-outline d-block" target="_blank">
-                                VER PROGRAMA
+                                INFORMES
                             </a>
                             <a href="#" class="btn btn-secondary d-block" data-toggle="modal" data-target="#modal-inscription">
                                 INSCRIBIRSE
