@@ -60,14 +60,14 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="transfer" role="tabpanel">
                                 <div class="offers-card">
-                                    <div class="offer">
+                                    <!--div class="offer">
                                         <div class="price">
                                             $800.00 <span class="currency">MXN</span>
                                         </div>
                                         <div class="date">
                                             Antes del <b> 10 de Agosto</b>
                                         </div>
-                                    </div>
+                                    </div-->
                                     <div class="offer">
                                         <div class="price">
                                             $1,000.00 <span class="currency">MXN</span>
@@ -80,14 +80,14 @@
                             </div>
                             <div class="tab-pane fade" id="paypal" role="tabpanel">
                                 <div class="offers-card">
-                                    <div class="offer">
+                                    <!--div class="offer">
                                         <div class="price">
                                             $45.00 <span class="currency">USD</span>
                                         </div>
                                         <div class="date">
                                             Antes del <b> 10 de Agosto</b>
                                         </div>
-                                    </div>
+                                    </div-->
                                     <div class="offer">
                                         <div class="price">
                                             $50.00 <span class="currency">USD</span>
@@ -203,12 +203,12 @@
                             <div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>TRANSFERENCIA</small>
                             </div>
-                            <div class="border-bottom border-secondary clearfix pt-3 pb-2">
+                            <!--div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>Pronto pago: Antes del 10 de Agosto</small>
                                 <span class="float-right font-weight-bold text-secondary">
                                     $800 <sup>MXN</sup>
                                 </span>
-                            </div>
+                            </div-->
                             <div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>A partir del 11 de Agosto</small>
                                 <span class="float-right font-weight-bold text-secondary">
@@ -231,12 +231,12 @@
                             <div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>PAYPAL</small>
                             </div>
-                            <div class="border-bottom border-secondary clearfix pt-3 pb-2">
+                            <!--div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>Pronto pago: Antes del 10 de Agosto</small>
                                 <span class="float-right font-weight-bold text-secondary">
                                     $45 <sup>USD</sup>
                                 </span>
-                            </div>
+                            </div-->
                             <div class="border-bottom border-secondary clearfix pt-3 pb-2">
                                 <small>A partir del 11 de Agosto</small>
                                 <span class="float-right font-weight-bold text-secondary">
