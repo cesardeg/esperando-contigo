@@ -14,7 +14,7 @@
 
         <!-- Styles -->
         <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-        <link href="{{ asset('css/welcome.css?v=1.0.1') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css?v=1.0.2') }}" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
@@ -34,16 +34,29 @@
                 </a>
                 @endauth
                 <a href="https://www.instagram.com/esperandocontigo/" target="_blank" class="link">
-                    <img src="{{ asset('img/instagram.svg') }}" alt="Esperando contigo" class="icon">
+                    <img src="{{ asset('img/instagram.svg') }}" alt="Instagram Esperando contigo" class="icon">
                 </a>
             </div>
         </nav>
         <main class="main" id="app">
             <div class="container">
                 <div class="campaign-col">
-                    <img src="{{ asset('img/campaign-2020/logo.png') }}" alt="Programa prenatal 2020" class="campaign">
+                    <img src="{{ asset('img/campaign-buenfin/logo.png') }}" alt="Programa prenatal 2020" class="campaign">
+                    <img src="{{ asset('img/campaign-buenfin/special.png') }}" alt="Oferta Especial Buen Fin 2020 - 2x1" class="campaign special mt-md-4">
+                    <div class="campaign campaign-box text-center">
+                        Prepárate y guíate junto a los mejores especialistas,
+                        sobre la información <b>que necesitas saber
+                        de - ANTES, DURANTE Y DESPÚES DEL EMBARAZO.</b>
+                    </div>
+                    <div class="campaign campaign-box secondary">
+                        Contenidos exclusivos desde la <b>comodidad de tu hogar.</b>
+                        <img src="{{ asset('img/campaign-buenfin/igtv.png') }}" />
+                    </div>
                 </div>
                 <div class="offers-col">
+                    <div class="card-wrapper">
+                        <img src="{{ asset('img/campaign-buenfin/buenfin.png') }}" alt="Buen Fin 2020" width="60" class="d-block mb-5 ml-auto mr-0">
+                    </div>
                     <div class="card-wrapper">
                         <ul class="nav nav-tabs offers-tabs" role="tablist">
                             <li class="nav-item">
@@ -73,7 +86,7 @@
                                             $1,000.00 <span class="currency">MXN</span>
                                         </div>
                                         <div class="date">
-                                            A partir del <b> 11 de Agosto</b>
+                                            A partir del <b> 1 de Noviembre</b>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +105,11 @@
                                         <div class="price">
                                             $50.00 <span class="currency">USD</span>
                                         </div>
+                                        <div class="price">
+                                            $1,100.00 <span class="currency">MXN</span>
+                                        </div>
                                         <div class="date">
-                                            A partir del <b> 11 de Agosto</b>
+                                            A partir del <b> 1 de Noviembre</b>
                                         </div>
                                     </div>
                                 </div>
@@ -110,9 +126,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container timer-wrapper">
-                <timer-component></timer-component>
             </div>
         </main>
         <div class="modal fade" id="modal-inscription" tabindex="-1" role="dialog" aria-hidden="true">
@@ -210,7 +223,6 @@
                                 </span>
                             </div-->
                             <div class="border-bottom border-secondary clearfix pt-3 pb-2">
-                                <small>A partir del 11 de Agosto</small>
                                 <span class="float-right font-weight-bold text-secondary">
                                     $1,000 <sup>MXN</sup>
                                 </span>
@@ -237,16 +249,13 @@
                                     $45 <sup>USD</sup>
                                 </span>
                             </div-->
-                            <div class="border-bottom border-secondary clearfix pt-3 pb-2">
-                                <small>A partir del 11 de Agosto</small>
-                                <span class="float-right font-weight-bold text-secondary">
-                                    $50 <sup>USD</sup>
-                                </span>
-                            </div>
+                        </div>
+                        <div class="text-right mb-4 clear-fix">
+                            <img src="{{ asset('img/paypal.svg') }}" alt="PayPal" class="float-left" height="24">
+                            <a href="{{ $link . '/50USD' }}" class="btn btn-secondary ml-3" target="_blank">PAGAR CON PAYPAL 50 USD</a>
                         </div>
                         <div class="text-right mb-4">
-                            <img src="{{ asset('img/paypal.svg') }}" alt="PayPal" class="my-3" height="24">
-                            <a href="{{ $link }}" class="btn btn-secondary ml-3" target="_blank">PAGAR CON PAYPAL</a>
+                            <a href="{{ $link . '/1100MXN' }}" class="btn btn-primary ml-3" target="_blank">PAGAR CON PAYPAL 1,100 MXN</a>
                         </div>
                         <hr class="border-dark" />
                         <p class="text-justify small">
@@ -264,9 +273,9 @@
             </div>
         </div>
     </body>
-    <script>
+    <!--script>
         window.eventDate = new Date('2020-08-23T16:00:00Z');
-    </script>
+    </script-->
     <script src="{{ asset(mix('js/app.js')) }}"></script>
     <script>
         @if(session('payment'))

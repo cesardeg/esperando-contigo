@@ -10,10 +10,7 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $price = Carbon::parse('2020-08-11', 'America/Mexico_City')->isFuture()
-            ? 45
-            : 50;
-        $link = "https://www.paypal.me/zensvsadecv/{$price}USD";
+        $link = "https://www.paypal.me/vialactancia";
         return view('welcome')->with('link', $link);
     }
 
