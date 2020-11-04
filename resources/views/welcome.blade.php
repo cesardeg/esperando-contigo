@@ -14,7 +14,7 @@
 
         <!-- Styles -->
         <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-        <link href="{{ asset('css/welcome.css?v=1.0.2') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css?v=1.0.3') }}" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
@@ -40,13 +40,13 @@
         </nav>
         <main class="main" id="app">
             <div class="container">
-                <div class="campaign-col">
+                <div class="campaign-col mb-4">
                     <img src="{{ asset('img/campaign-buenfin/logo.png') }}" alt="Programa prenatal 2020" class="campaign">
                     <img src="{{ asset('img/campaign-buenfin/special.png') }}" alt="Oferta Especial Buen Fin 2020 - 2x1" class="campaign special mt-md-4">
-                    <div class="campaign campaign-box text-center">
+                    <div class="campaign campaign-box text-justify">
                         Prepárate y guíate junto a los mejores especialistas,
                         sobre la información <b>que necesitas saber
-                        de - ANTES, DURANTE Y DESPÚES DEL EMBARAZO.</b>
+                        ANTES, DURANTE Y DESPÚES DEL EMBARAZO.</b>
                     </div>
                     <div class="campaign campaign-box secondary">
                         Contenidos exclusivos desde la <b>comodidad de tu hogar.</b>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="offers-col">
                     <div class="card-wrapper">
-                        <img src="{{ asset('img/campaign-buenfin/buenfin.png') }}" alt="Buen Fin 2020" width="60" class="d-block mb-5 ml-auto mr-0">
+                        <img src="{{ asset('img/campaign-buenfin/buenfin.png') }}" alt="Buen Fin 2020" width="100" class="d-none d-md-block ml-auto mr-0 mb-5">
                     </div>
                     <div class="card-wrapper">
                         <ul class="nav nav-tabs offers-tabs" role="tablist">
@@ -230,13 +230,13 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col-12 col-sm-3">
-                                <img src="{{ asset('img/bank.svg') }}" alt="Banco Multiva" height="24" class="mb-3">
+                                <img src="{{ asset('img/inbursa.png') }}" alt="Inbursa" height="24" class="mb-3">
                             </div>
                             <div class="col-sm-9 small">
-                                <span class="text-nowrap">Razón social: <strong>Zensv S.A. de C.V.</strong></span>
-                                <span class="text-nowrap">Banco: <strong>Banco Multiva, S. A</strong></span>
-                                <span class="text-nowrap">No. de cuenta: <strong>00007239971</strong></span>
-                                <span class="text-nowrap">Clabe interbancaria: <strong>132180000072399715</strong></span>
+                                <span class="text-nowrap">Razón social: <strong>FERSAL MEDIC S.C.</strong></span><br />
+                                <span class="text-nowrap">Banco: <strong>Inbursa</strong></span><br />
+                                <span class="text-nowrap">No. de cuenta: <strong>50044016214</strong></span><br />
+                                <span class="text-nowrap">Clabe interbancaria: <strong>036180500440162141</strong></span>
                             </div>
                         </div>
                         <div class="mb-4">
